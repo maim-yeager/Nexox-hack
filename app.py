@@ -1067,7 +1067,7 @@ def run_scan(scan_id, target_url, scan_types):
         'target': target_url,
         'started_at': datetime.now().strftime('%Y-%m-%d %H:%M:%S')
     }
-scan_results[scan_id] = {
+    scan_results[scan_id] = {
         'vulnerabilities': [],
         'stats': {'total': 0, 'critical': 0, 'high': 0, 'medium': 0, 'low': 0, 'info': 0}
     }
@@ -1075,7 +1075,7 @@ scan_results[scan_id] = {
     stop_flag = threading.Event()
     active_scans[scan_id]['stop_flag'] = stop_flag
     
-    add_log(scan_id, 'SUCCESS', f"🚀 Scan started for target: {target_url}")
+    add_log(scan_id, 'SUCCESS', f"Scan started for target: {target_url}")
     add_log(scan_id, 'INFO', f"Selected scan types: {', '.join(scan_types)}")
     
     # Phase 1: Reconnaissance
