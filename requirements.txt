@@ -1,5 +1,7 @@
-Flask
-flask-cors
-gunicorn
-dnspython
-certifi
+flask==3.0.3
+flask-cors==4.0.2
+gunicorn==22.0.0
+dnspython==2.6.1
+certifi==2024.7.4
+requests==2.32.3
+urllib3==2.2.2
